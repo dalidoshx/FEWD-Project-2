@@ -1,6 +1,5 @@
 * {
-    box-sizing: border-box;
-    text-align: center; 
+    box-sizing: border-box; 
 }
 
 body {
@@ -30,16 +29,8 @@ h2 {
    font-size: 1em;
    font-weight: 800;
    text-transform: uppercase;
-   margin-top: 40px;
-   margin-bottom: 40px; 
-}
-
-li {
-    list-style: none;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 15px;
-    font-size: 20px;
+   margin-top: 50px;
+   margin-bottom: 50px; 
 }
 
 h3 {
@@ -57,18 +48,19 @@ a:hover {
     color: #00bfff;
 }
 
-/* header,
+header,
 main {
     text-align: center;
-} */
+}
 
 .intro-picture {
-    width: 65%;
+    width: 75%;
 }
 
 .intro,
 .contact {
-    margin: 45px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .intro p,
@@ -82,7 +74,7 @@ main {
 }
 
 .col {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .col-picture {
@@ -90,7 +82,8 @@ main {
 }
 
 .col-text {
-    padding: 0 40px 0 40px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 /* .testimonial {
@@ -108,28 +101,33 @@ main {
       font-size: 1em;
       border-top: 1px solid #d8d6d6;
       margin-top: 60px;
-      padding: 25px 0 25px 0;
+      padding-top: 25px;
+      padding-bottom: 25px;
   }
 
   .name-footer {
       float: left;
-      font-weight: 700;
+      font-weight: 800;
   }
 
-  .main-nav {
+  .main-nav li {
       text-transform: uppercase;
       background: #fff;
       padding: 10px;
       margin-bottom: 5px;
+      font-size: 1em;
+      font-weight: 800;
   }
 
-  .main-nav a li {
+  .main-nav li a {
       display: block;
   }
 
  .footer-nav {
      text-transform: uppercase;
      float: right;
+     font-size: 1em;
+     font-weight: 800;
  }
 
  .footer-meniu {
@@ -139,3 +137,137 @@ main {
  .container {
      margin: 0 20px 0 20px;
  }
+
+ .wrapper {
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+
+ .col-content {
+     background: #fff;
+     padding: 10px 15px 40px 15px;
+ }
+
+ .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+ }
+
+     @media (min-width: 768px) {
+
+        .container {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .col-content {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .name-header {
+            margin-top: 50px;
+            margin-bottom: 5px;
+        }
+
+        .main-nav li {
+            display: inline-block;
+            background: none;
+            padding: 10px;
+        }
+
+        .intro-text {
+            float: left;
+            width: 50%;
+            font-size: 1.2em;
+            text-align: left;
+            margin: 0 auto;
+        }
+
+        .intro-picture {
+            float: right;
+            width: 45%;
+            padding-left: 30px;
+            padding-bottom: 30px;
+        }
+
+        .col {
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .col-text {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .contact {
+            width: 70%;
+            margin:  auto;
+        }
+
+        .contact-text {
+            font-size: 1.2em;
+            padding-bottom: 40px;
+        }
+
+        .footer-meniu {
+            display: inline-block;
+        }
+
+        .footer-meniu a {
+            padding-left: 40px;
+        }
+
+        .arrow {
+            display: none;
+        }
+    }
+
+    @media (min-width: 1024px) {
+
+        .container {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .col-content {
+            margin-left: 40px;
+            margin-right: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .name {
+            float: left;
+        }
+
+        .main-nav {
+            float: right;
+            margin-top: 40px;
+        }
+
+        .main-nav li {
+            padding: 20px 0 0 40px;
+        }
+
+        .col {
+            width: 33%;
+            padding: 10px;
+        }
+
+        .col-text {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        .contact {
+            width: 50%;
+            margin: auto;
+        }
+    }
+
+
+    
