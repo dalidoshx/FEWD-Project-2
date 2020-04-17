@@ -147,9 +147,9 @@ main {
 
  .col-html,
  .col-css {
-        width: 90%;
-        padding: 40px; 
-        margin-left: 20px;
+    width: 90%;
+    padding: 40px; 
+    margin-left: 20px;
     }
 
     @media (min-width: 768px) {
@@ -233,7 +233,12 @@ main {
         width: 40%;
         padding: 10px;
         float: right;
+        margin: 0;
     }  
+
+    #skills {
+        margin-right: 15px;
+    }
 }
 
     @media (min-width: 1024px) {
